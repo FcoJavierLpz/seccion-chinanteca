@@ -41,7 +41,7 @@ export default {};
   box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
   background-color: rgba($color-white, 0.6);
   border-radius: 3px;
-  padding: 6rem;
+  padding: 3rem;
   padding-left: 9rem;
   font-size: $default-font-size;
   transform: skewX(-12deg);
