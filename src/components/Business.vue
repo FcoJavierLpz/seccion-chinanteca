@@ -13,7 +13,7 @@
         <p>Av. Juarez # 185. Col centro. Valle Nacional, Oax.</p>
         <ul>
           <li>
-            <i class="icofont-phone phone"></i>
+            <i class="icofont-phone"></i>
             <span>554 550 03 18</span>
           </li>
           <li>
@@ -144,7 +144,8 @@ export default {};
           padding: 1rem 0;
 
           &:not(:last-child) {
-              border-bottom: 1px solid $color-grey-light-2;
+            border-right: 0;
+            border-bottom: 1px solid $color-grey-light-2;
           }
         }
 
@@ -159,15 +160,29 @@ export default {};
 
       [class^="icofont-"] {
         font-size: 2.5rem;
-        background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
 
         &:not(:last-child) {
           margin-right: .4rem;
         }
       };
+    }
+
+    .icofont-phone {
+      color: $color-grey-dark;
+    }
+
+    .icofont-whatsapp {
+      background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .icofont-facebook-messenger {
+      background-image: linear-gradient(#00C6FF, #0078FF);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
     }
   }
 }
