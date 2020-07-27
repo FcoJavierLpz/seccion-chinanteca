@@ -7,6 +7,9 @@
           src="@/assets/img/logo-green.svg"
         />
       </picture>
+      <div class="footer__copyright">
+         © Copyright 2020
+      </div>
     </div>
   </footer>
 </template>
@@ -39,5 +42,10 @@ export default {};
     width: 15rem;
     height: auto;
   }
+
+  &__copyright {
+    font-size: 1.5rem;
+  }
+
 }
 </style>
