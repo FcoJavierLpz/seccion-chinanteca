@@ -73,6 +73,11 @@ export default {};
       border-radius: none;
     }
 
+    @include respond(tab-port) {
+      float: none;
+      margin: 0 auto;
+    }
+
     @include respond(phone) {
       transform: translateX(-3rem) skewX(0);
     }
@@ -80,7 +85,7 @@ export default {};
 
   &__img {
     height: 100%;
-    transform: translateX(-4rem) scale(1.4);
+    transform: translateX(-2rem) scale(1.4);
     backface-visibility: hidden;
     transition: all 0.5s;
   }
@@ -113,7 +118,7 @@ export default {};
   }
 
   &:hover &__img {
-    transform: translateX(-4rem) scale(1);
+    transform: translateX(0) scale(1);
     filter: blur(3px) brightness(80%);
   }
 
@@ -133,6 +138,10 @@ export default {};
 
         &:not(:last-child) {
           border-right: 1px solid $color-grey-light-2;
+        }
+
+        &:first-child {
+          padding-left: 0;
         }
       }
 

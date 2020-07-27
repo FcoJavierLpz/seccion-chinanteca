@@ -2,14 +2,14 @@
   <footer class="footer">
     <div class="footer__logo-box">
       <picture class="footer__logo">
-        <source
+        <!-- <source
           srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x"
           media="(max-width: 37.5em)"
-        />
+        /> -->
         <img
-          srcset="@/assets/img/icon-logo-2.png 1x, @/assets/img/icon-logo-2.png 2x"
+
           alt="Full logo"
-          src="@/assets/img/icon-logo-2.png"
+          src="@/assets/img/icon-logo.png"
         />
       </picture>
     </div>
