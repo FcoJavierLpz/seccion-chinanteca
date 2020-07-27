@@ -2,14 +2,9 @@
   <footer class="footer">
     <div class="footer__logo-box">
       <picture class="footer__logo">
-        <!-- <source
-          srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x"
-          media="(max-width: 37.5em)"
-        /> -->
         <img
-
-          alt="Full logo"
-          src="@/assets/img/icon-logo.png"
+          alt="logo verde"
+          src="@/assets/img/logo-green.svg"
         />
       </picture>
     </div>

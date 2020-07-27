@@ -1,0 +1,102 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  x="0px"
+  y="0px"
+  width="96"
+  height="96"
+  viewBox="0 0 172 172"
+  style=" fill:#000000;"
+>
+  <defs>
+    <linearGradient
+      x1="95.40625"
+      y1="34.36506"
+      x2="95.40625"
+      y2="64.61288"
+      gradientUnits="userSpaceOnUse"
+      id="color-1_wT1YWLsBE7CE_gr1"
+    >
+      <stop offset="0" stop-color="#95facc"></stop>
+      <stop offset="1" stop-color="#6ec8ff"></stop>
+    </linearGradient>
+    <linearGradient
+      x1="86"
+      y1="21.21513"
+      x2="86"
+      y2="152.23344"
+      gradientUnits="userSpaceOnUse"
+      id="color-2_wT1YWLsBE7CE_gr2"
+    >
+      <stop offset="0" stop-color="#2af598"></stop>
+      <stop offset="1" stop-color="#009efd"></stop>
+    </linearGradient>
+    <linearGradient
+      x1="86"
+      y1="21.21513"
+      x2="86"
+      y2="152.23344"
+      gradientUnits="userSpaceOnUse"
+      id="color-3_wT1YWLsBE7CE_gr3"
+    >
+      <stop offset="0" stop-color="#2af598"></stop>
+      <stop offset="1" stop-color="#009efd"></stop>
+    </linearGradient>
+    <linearGradient
+      x1="48.375"
+      y1="22.01331"
+      x2="48.375"
+      y2="39.05475"
+      gradientUnits="userSpaceOnUse"
+      id="color-4_wT1YWLsBE7CE_gr4"
+    >
+      <stop offset="0" stop-color="#95facc"></stop>
+      <stop offset="1" stop-color="#6ec8ff"></stop>
+    </linearGradient>
+  </defs>
+  <g transform="">
+    <g
+      fill="none"
+      fill-rule="nonzero"
+      stroke="none"
+      stroke-width="1"
+      stroke-linecap="butt"
+      stroke-linejoin="miter"
+      stroke-miterlimit="10"
+      stroke-dasharray=""
+      stroke-dashoffset="0"
+      font-family="none"
+      font-weight="none"
+      font-size="none"
+      text-anchor="none"
+      style="mix-blend-mode: normal"
+    >
+      <path d="M0,172v-172h172v172z" fill="none"></path>
+      <g id="Layer_1">
+        <path
+          d="M92.9875,38.96875l-12.9,25.53125h30.90625l-12.9,-25.53125c-1.34375,-1.88125 -4.03125,-1.88125 -5.10625,0z"
+          fill="url(#color-1_wT1YWLsBE7CE_gr1)"
+        ></path>
+        <rect
+          x="13"
+          y="56"
+          transform="scale(2.6875,2.6875)"
+          width="38"
+          height="2"
+          fill="url(#color-2_wT1YWLsBE7CE_gr2)"
+        ></rect>
+        <path
+          d="M162.8625,137.0625l-59.125,-115.5625c-1.6125,-3.225 -4.8375,-5.375 -8.33125,-5.375c-3.49375,0 -6.71875,2.15 -8.6,5.375l-27.68125,54.55625c-1.6125,-2.41875 -4.3,-3.7625 -7.25625,-3.7625v0c-3.225,0 -6.18125,1.6125 -7.79375,4.56875l-34.9375,60.2h-3.7625v5.375h155.875h5.375v-5.375zM15.31875,137.0625l33.325,-57.5125c0.5375,-1.075 1.88125,-1.88125 3.225,-1.88125v0c1.34375,0 2.41875,0.5375 3.225,1.88125l14.5125,25.2625h-10.48125v5.375h13.4375l3.225,5.375h-8.6v5.375h11.55625l3.225,5.375h-9.40625v5.375h12.3625l3.225,5.375zM94.33125,137.0625l-31.98125,-55.63125l29.5625,-57.78125c0.5375,-1.34375 1.88125,-2.15 3.49375,-2.15c1.6125,0 2.95625,0.80625 3.7625,2.15l57.78125,113.4125z"
+          fill="url(#color-3_wT1YWLsBE7CE_gr3)"
+        ></path>
+        <circle
+          cx="18"
+          cy="12"
+          transform="scale(2.6875,2.6875)"
+          r="3"
+          fill="url(#color-4_wT1YWLsBE7CE_gr4)"
+        ></circle>
+      </g>
+      <path d="" fill="none"></path>
+    </g>
+  </g>
+</svg>
