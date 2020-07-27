@@ -6,13 +6,17 @@
       </h2>
     </div>
     <div class="row">
+      <business></business>
     </div>
   </section>
 </template>
 
 <script>
+import Business from './Business.vue';
+
 export default {
   name: 'SectionDirectory',
+  components: { Business },
 };
 </script>
 
