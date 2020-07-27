@@ -125,16 +125,28 @@ export default {};
   &__contact-details {
     padding: 1rem;
 
+    @include respond(tab-port) {
+      padding: 0;
+    }
+
     ul {
       list-style: none;
-      /* width: 80%;
-      margin: 0 auto; */
 
       li {
         text-align: center;
         font-size: 1.5rem;
         padding: 1rem;
         display: inline-block;
+
+        @include respond(tab-port) {
+          display: block;
+          text-align: justify;
+          padding: 1rem 0;
+
+          &:not(:last-child) {
+              border-bottom: 1px solid $color-grey-light-2;
+          }
+        }
 
         &:not(:last-child) {
           border-right: 1px solid $color-grey-light-2;
