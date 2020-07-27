@@ -8,15 +8,21 @@
     <div class="row">
       <business></business>
     </div>
+    <div class="row">
+      <div class="col-1-of-3">
+        <card></card>
+      </div>
+    </div>
   </section>
 </template>
 
 <script>
 import Business from './Business.vue';
+import Card from './Card.vue';
 
 export default {
   name: 'SectionDirectory',
-  components: { Business },
+  components: { Business, Card },
 };
 </script>
 
