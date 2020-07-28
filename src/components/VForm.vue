@@ -35,18 +35,27 @@
     </div>
 
     <div class="form__group">
-      <input type="text" class="form__input" placeholder="Whatsapp" id="whatsapp" required />
+      <input
+        type="text"
+        class="form__input"
+        placeholder="Whatsapp"
+        name="whatsapp"
+        id="whatsapp"
+        required
+      />
       <label for="whatsapp" class="form__label">Whatsapp</label>
     </div>
 
     <div class="form__group">
-      <input
-        type="textarea"
+      <textarea
         class="form__input"
+        cols="20"
+        rows="4"
         placeholder="¿Qué vendes?"
+        name="description"
         id="description"
         required
-      />
+      ></textarea>
       <label for="description" class="form__label">¿Qué vendes?</label>
     </div>
 
