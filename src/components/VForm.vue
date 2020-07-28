@@ -7,13 +7,13 @@
     </div>
 
     <div class="form__group">
-      <input type="text" class="form__input" placeholder="Nombre" id="name" required />
-      <label for="name" class="form__label">Nombre</label>
+      <input type="text" class="form__input" placeholder="Nombre del negocio" id="name" required />
+      <label for="name" class="form__label">Nombre del negocio</label>
     </div>
 
     <div class="form__group">
-      <input type="text" class="form__input" placeholder="phone" id="phone" required />
-      <label for="phone" class="form__label">phone</label>
+      <input type="text" class="form__input" placeholder="Teléfono" id="phone" required />
+      <label for="phone" class="form__label">Teléfono</label>
     </div>
 
     <div class="form__group">
@@ -25,11 +25,11 @@
       <input
         type="textarea"
         class="form__input"
-        placeholder="description"
+        placeholder="¿Qué vendes?"
         id="description"
         required
       />
-      <label for="description" class="form__label">descripcin</label>
+      <label for="description" class="form__label">¿Qué vendes?</label>
     </div>
 
     <div class="form__group">
