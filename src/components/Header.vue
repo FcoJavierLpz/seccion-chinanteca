@@ -6,7 +6,7 @@
     <div class="header__text-box">
       <h1 class="heading-primary">
         <span class="heading-primary--main">Sección Chinanteca</span>
-        <q class="heading-primary--sub">Unidos somos mas fuertes</q>
+        <q class="heading-primary--sub">La solidaridad como acto revolucionario</q>
       </h1>
       <a href="#directory" class="btn btn--white btn--animated">Comenzar a buscar</a>
     </div>

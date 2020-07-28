@@ -12,8 +12,9 @@
           Seccion Chinanteca
         </h3>
         <p class="paragraph">
-          Esta página fue creada en apoyo al comercio local de nuestra comunidad con el unico
-          objetivo de reactivar nuestra economia.
+          El objetivo de esta página es servir como apoyo para la reactivación de la economia local
+          en nuestra comunidad, mediante un directorio que concentra todos los comercios
+          disponibles.
         </p>
       </div>
       <div class="col-1-of-2">
@@ -45,4 +46,5 @@ export default {};
     width: 80%;
   }
 }
+
 </style>
