@@ -1,5 +1,9 @@
 <template>
-  <form action="#" class="form">
+  <form
+    action="https://send.pageclip.co/U3QSPafLGcDmXA6nw9y9mew0UmBI4S71"
+    class="pageclip-form form"
+    method="post"
+  >
     <div class="u-margin-bottom-medium">
       <h2 class="heading-secondary">
         Registra tu negocio
@@ -7,12 +11,26 @@
     </div>
 
     <div class="form__group">
-      <input type="text" class="form__input" placeholder="Nombre del negocio" id="name" required />
+      <input
+        type="text"
+        class="form__input"
+        placeholder="Nombre del negocio"
+        name="name"
+        id="name"
+        required
+      />
       <label for="name" class="form__label">Nombre del negocio</label>
     </div>
 
     <div class="form__group">
-      <input type="text" class="form__input" placeholder="Teléfono" id="phone" required />
+      <input
+        type="text"
+        class="form__input"
+        placeholder="Teléfono"
+        name="phone"
+        id="phone"
+        required
+      />
       <label for="phone" class="form__label">Teléfono</label>
     </div>
 
@@ -33,7 +51,9 @@
     </div>
 
     <div class="form__group">
-      <button class="btn btn--green">Registrar</button>
+      <button type="submit" class="pageclip-form__submit btn btn--green">
+        <span>Registrar</span>
+      </button>
     </div>
   </form>
 </template>
