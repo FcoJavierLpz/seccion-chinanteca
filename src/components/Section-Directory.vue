@@ -6,23 +6,27 @@
       </h2>
     </div>
     <div class="row">
-      <business></business>
+      <search></search>
     </div>
-    <div class="row">
-      <div class="col-1-of-3">
-        <card></card>
-      </div>
+    <div class="row" v-for="commerce in business" :key="commerce.id">
+      <business :business="commerce"></business>
     </div>
   </section>
 </template>
 
 <script>
 import Business from './Business.vue';
-import Card from './Card.vue';
+import Search from './Search.vue';
+import api from './api/business.json';
 
 export default {
   name: 'SectionDirectory',
-  components: { Business, Card },
+  components: { Business, Search },
+  data() {
+    return {
+      business: api,
+    };
+  },
 };
 </script>
 

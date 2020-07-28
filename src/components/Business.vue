@@ -1,27 +1,37 @@
 <template>
   <div class="business">
     <figure class="business__shape">
-      <img src="@/assets/img/kike-pizza.jpg" alt="Kikes Pizza" class="business__img" />
+      <img
+        :src="
+          business.image
+            ? require(`@/assets/${this.business.image}`)
+            : require(`@/assets/${this.imageDefault}`)
+        "
+        alt="Kikes Pizza"
+        class="business__img"
+      />
       <figcaption class="business__caption">Kikes Pizza</figcaption>
     </figure>
     <div class="business__text">
       <h3 class="heading-tertiary u-margin-bottom-small">
-        Kikes Pizza
+        {{ business.name }}
       </h3>
       <h4>Datos de Contacto</h4>
       <div class="business__contact-details">
-        <p>Av. Juarez # 185. Col centro. Valle Nacional, Oax.</p>
+        <p>
+          {{ business.address }}
+        </p>
         <ul>
           <li>
             <a href="">
               <i class="icofont-phone"></i>
-              <span>554 550 03 18</span>
+              <span> {{ business.phone }} </span>
             </a>
           </li>
           <li>
             <a href="">
               <i class="icofont-whatsapp"></i>
-              <span>554 550 03 18</span>
+              <span> {{ business.whatsapp }} </span>
             </a>
           </li>
           <li>
@@ -37,7 +47,19 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    business: {
+      type: Object,
+      default: () => {},
+    },
+  },
+  data() {
+    return {
+      imageDefault: 'img/illustrations/store.svg',
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -91,7 +113,7 @@ export default {};
 
   &__img {
     height: 100%;
-    transform: translateX(-2rem) scale(1.4);
+    transform: translateX(0) scale(1.2);
     backface-visibility: hidden;
     transition: all 0.5s;
   }
@@ -172,9 +194,9 @@ export default {};
         font-size: 2.5rem;
 
         &:not(:last-child) {
-          margin-right: .4rem;
+          margin-right: 0.4rem;
         }
-      };
+      }
     }
 
     .icofont-phone {
@@ -189,12 +211,11 @@ export default {};
     }
 
     .icofont-facebook-messenger {
-      background-image: linear-gradient(#00C6FF, #0078FF);
+      background-image: linear-gradient(#00c6ff, #0078ff);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
     }
   }
 }
-
 </style>
