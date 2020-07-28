@@ -6,9 +6,9 @@
       </h2>
     </div>
     <div class="row">
-      <search></search>
+      <search @search-business="emitSearch"></search>
     </div>
-    <div class="row" v-for="commerce in business" :key="commerce.id">
+    <div class="row" v-for="commerce in filteredBusiness" :key="commerce.id">
       <business :business="commerce"></business>
     </div>
   </section>
@@ -25,7 +25,19 @@ export default {
   data() {
     return {
       business: api,
+      filter: '',
     };
+  },
+  methods: {
+    emitSearch(search) {
+      this.filter = search;
+    },
+  },
+  computed: {
+    filteredBusiness() {
+      return this.business
+        .filter((commerce) => commerce.name.toLowerCase().includes(this.filter.toLowerCase()));
+    },
   },
 };
 </script>

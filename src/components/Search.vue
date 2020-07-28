@@ -1,6 +1,12 @@
 <template>
   <form action="#" class="search">
-    <input type="text" class="search__input" placeholder="Buscar.." />
+    <input
+      type="text"
+      @input="filter"
+      v-model="search"
+      class="search__input"
+      placeholder="Buscar.."
+    />
     <button class="search__button">
       <svg class="search__icon">
         <use xlink:href="@/assets/img/sprite.svg#icon-magnifying-glass"></use>
@@ -10,7 +16,18 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      search: '',
+    };
+  },
+  methods: {
+    filter() {
+      this.$emit('search-business', this.search);
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

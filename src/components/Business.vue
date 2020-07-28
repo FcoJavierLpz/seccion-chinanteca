@@ -7,10 +7,12 @@
             ? require(`@/assets/${this.business.image}`)
             : require(`@/assets/${this.imageDefault}`)
         "
-        alt="Kikes Pizza"
+        :alt="business.name"
         class="business__img"
       />
-      <figcaption class="business__caption">Kikes Pizza</figcaption>
+      <figcaption class="business__caption">
+        {{ business.name }}
+      </figcaption>
     </figure>
     <div class="business__text">
       <h3 class="heading-tertiary u-margin-bottom-small">
