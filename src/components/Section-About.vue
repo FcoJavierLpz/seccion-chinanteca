@@ -21,13 +21,13 @@
         <div class="composition">
           <img
             srcset="
-              @/assets/img/illustrations/about-5.svg  300w,
-              @/assets/img/illustrations/about-5.svg 1000w
+              @/assets/img/illustrations/about.svg  300w,
+              @/assets/img/illustrations/about.svg 1000w
             "
             sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
             alt="Photo 1"
             class="composition__photo"
-            src="@/assets/img/illustrations/about-5.svg"
+            src="@/assets/img/illustrations/about.svg"
           />
         </div>
       </div>
