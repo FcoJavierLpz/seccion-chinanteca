@@ -14,7 +14,7 @@
         <p class="paragraph">
           El objetivo de esta página es servir como apoyo para la reactivación de la economia local
           en nuestra comunidad, mediante un directorio que concentra todos los comercios
-          disponibles.
+          disponibles en nuestra localidad.
         </p>
       </div>
       <div class="col-1-of-2">
