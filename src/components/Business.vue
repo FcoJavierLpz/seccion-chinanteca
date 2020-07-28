@@ -106,6 +106,7 @@ export default {
     @include respond(tab-port) {
       float: none;
       margin: 0 auto;
+      margin-bottom: 1.5rem;
     }
 
     @include respond(phone) {
