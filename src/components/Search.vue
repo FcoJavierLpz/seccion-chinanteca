@@ -5,9 +5,9 @@
       @input="filter"
       v-model="search"
       class="search__input"
-      placeholder="Buscar.."
+      placeholder="Buscar Negocio"
     />
-    <button class="search__button">
+    <button class="search__button" @click="filter">
       <svg class="search__icon">
         <use xlink:href="@/assets/img/sprite.svg#icon-magnifying-glass"></use>
       </svg>
@@ -23,7 +23,8 @@ export default {
     };
   },
   methods: {
-    filter() {
+    filter(e) {
+      e.preventDefault();
       this.$emit('search-business', this.search);
     },
   },
