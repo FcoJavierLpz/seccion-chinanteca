@@ -3,6 +3,7 @@
     action="https://send.pageclip.co/U3QSPafLGcDmXA6nw9y9mew0UmBI4S71"
     class="pageclip-form form"
     method="post"
+    @:submit.prevent="onSubmit"
   >
     <div class="u-margin-bottom-medium">
       <h2 class="heading-secondary">
@@ -16,6 +17,7 @@
         class="form__input"
         placeholder="Nombre del negocio"
         name="name"
+        v-model="name"
         id="name"
         required
       />
@@ -28,6 +30,7 @@
         class="form__input"
         placeholder="Teléfono"
         name="phone"
+        v-model="phone"
         id="phone"
         required
       />
@@ -40,6 +43,7 @@
         class="form__input"
         placeholder="Whatsapp"
         name="whatsapp"
+        v-model="whatsapp"
         id="whatsapp"
         required
       />
@@ -53,6 +57,7 @@
         rows="4"
         placeholder="¿Qué vendes?"
         name="description"
+        v-model="description"
         id="description"
         required
       ></textarea>
@@ -64,12 +69,42 @@
         <span>Registrar</span>
       </button>
     </div>
+    <div class="alert alert--success" role="alert" v-show="isSending">
+      <button
+        type="button"
+        class="close"
+        data-dismiss="alert"
+        aria-label="Close"
+        @click="isSending = false"
+      >
+        <span aria-hidden="true">×</span>
+      </button>
+      <strong>¡Gracias por registrarte!,</strong>
+      tu información será evaluada, en caso de cumplir los requisitos te
+      notifcaremos a los números proporcionados
+    </div>
   </form>
 </template>
 
 <script>
 export default {
   name: 'VForm',
+  data() {
+    return {
+      errors: [],
+      name: null,
+      phone: null,
+      whatsapp: null,
+      description: null,
+      isSending: false,
+    };
+  },
+  methods: {
+    onSubmit(e) {
+      e.preventDefault();
+      this.isSending = true;
+    },
+  },
 };
 </script>
 
@@ -175,6 +210,41 @@ export default {
 
   &__radio-input:checked ~ &__radio-label &__radio-button::after {
     opacity: 1;
+  }
+
+  .alert {
+    font-size: $default-font-size;
+    color: $color-primary;
+    padding: 1.3rem;
+    margin-bottom: 2rem;
+    border: .1rem solid transparent;
+    border-radius: .4rem;
+    margin-right: 3rem;
+
+    &--success {
+      color: #3c763d;
+      background-color: #dff0d8;
+      border-color: #d6e9c6;
+    }
+  }
+
+  button.close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+  }
+
+  .close {
+    float: right;
+    font-size: 2.1rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 $color-white;
+    filter: alpha(opacity=20);
+    opacity: 0.2;
   }
 }
 </style>
