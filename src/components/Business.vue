@@ -18,6 +18,7 @@
       <h3 class="heading-tertiary u-margin-bottom-small">
         {{ business.name }}
       </h3>
+      <p class="paragraph"> {{ business.description }} </p>
       <h4>Datos de Contacto</h4>
       <div class="business__contact-details">
         <p>
