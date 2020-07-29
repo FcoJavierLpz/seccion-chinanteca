@@ -3,7 +3,7 @@
     action="https://send.pageclip.co/U3QSPafLGcDmXA6nw9y9mew0UmBI4S71"
     class="pageclip-form form"
     method="post"
-    @:submit.prevent="onSubmit"
+    @submit.prevent="onSubmit"
   >
     <div class="u-margin-bottom-medium">
       <h2 class="heading-secondary">
