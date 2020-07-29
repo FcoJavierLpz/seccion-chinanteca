@@ -69,7 +69,7 @@
         <span>Registrar</span>
       </button>
     </div>
-    <div class="alert alert--success" role="alert" v-show="isSending">
+    <div class="animated fadeInDown alert alert--success" role="alert" v-show="isSending">
       <button
         type="button"
         class="close"
@@ -79,7 +79,7 @@
       >
         <span aria-hidden="true">×</span>
       </button>
-      <strong>¡Gracias por registrarte!,</strong>
+      <strong>¡Gracias por registrarte {{ name }}!,</strong>
       tu información será evaluada, en caso de cumplir los requisitos te
       notifcaremos a los números proporcionados
     </div>
