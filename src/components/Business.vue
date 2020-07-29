@@ -56,11 +56,9 @@ export default {
     share(number) {
       const shareUrl = 'https://api.whatsapp.com/send?';
       const Message = 'Hola, estoy interesado en tus productos, me podrias brindar más información. Gracias.';
-      const phone = number.split('').filter(Number).join('');
-      console.log(phone);
       let send = '';
       send += shareUrl;
-      send += `phone=${phone}`;
+      send += `phone=${number}`;
       send += `&text=${Message}`;
       window.open(
         encodeURI(send),
