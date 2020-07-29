@@ -18,7 +18,7 @@
       <h3 class="heading-tertiary u-margin-bottom-small">
         {{ business.name }}
       </h3>
-      <p class="paragraph"> {{ business.description }} </p>
+      <p class="paragraph">{{ business.description }}</p>
       <h4>Datos de Contacto</h4>
       <div class="business__contact-details">
         <p>
@@ -26,22 +26,12 @@
         </p>
         <ul>
           <li>
-            <a href="">
-              <i class="icofont-phone"></i>
-              <span> {{ business.phone }} </span>
-            </a>
+            <i class="icofont-phone"></i>
+            <span> {{ business.phone }} </span>
           </li>
-          <li>
-            <a href="">
-              <i class="icofont-whatsapp"></i>
-              <span> {{ business.whatsapp }} </span>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <i class="icofont-facebook-messenger"></i>
-              <span>Messenger</span>
-            </a>
+          <li @click="share(business.whatsapp)">
+            <i class="icofont-whatsapp"></i>
+            <span> {{ business.whatsapp }} </span>
           </li>
         </ul>
       </div>
@@ -61,6 +51,22 @@ export default {
     return {
       imageDefault: 'img/illustrations/store.svg',
     };
+  },
+  methods: {
+    share(number) {
+      const shareUrl = 'https://api.whatsapp.com/send?';
+      const Message = 'Hola, estoy interesado en tus productos, me podrias brindar más información. Gracias.';
+      const phone = number.split('').filter(Number).join('');
+      console.log(phone);
+      let send = '';
+      send += shareUrl;
+      send += `phone=${phone}`;
+      send += `&text=${Message}`;
+      window.open(
+        encodeURI(send),
+        '_blank',
+      );
+    },
   },
 };
 </script>
@@ -169,6 +175,7 @@ export default {
         font-size: 1.5rem;
         padding: 1rem;
         display: inline-block;
+        cursor: pointer;
 
         @include respond(tab-port) {
           display: block;
