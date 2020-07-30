@@ -3,20 +3,9 @@
     "id": 1,
     "name": "Kikes Pizza",
     "image": "img/kike-pizza.jpg",
-    "address": "Av. Juarez # 185. Col Centro. Valle Nacional, Oax.",
-    "phone": "283 100 03 29",
-    "whatsapp": "554 550 03 18",
-    "facebook": "https://www.facebook.com/",
-    "description": "",
-    "dealer": ""
-  },
-  {
-    "id": 2,
-    "name": "Tienda",
-    "image": "",
-    "address": "Av. Reforma # 18. Col Centro. Valle Nacional, Oax.",
-    "phone": "283 100 03 29",
-    "whatsapp": "554 550 03 19",
+    "address": "Calle Tabasco 68480 San Juan Bautista Valle Nacional",
+    "phone": " 87 7 44 23",
+    "whatsapp": "2838774423",
     "facebook": "https://www.facebook.com/",
     "description": "",
     "dealer": ""
