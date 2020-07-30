@@ -19,3 +19,33 @@
 
 .u-margin-top-big { margin-top: 8rem !important; }
 .u-margin-top-huge { margin-top: 10rem !important; }
+
+.tooltip {
+    position: relative;
+
+    &:after {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      content: attr(data-tooltip);
+      padding: 6px 10px;
+      transform: translateX(-50%) translateY(-2px);
+      background: $color-secondary-dark;
+      color: $color-white;
+      white-space: nowrap;
+      z-index: 2;
+      font-weight: bold;
+      border-radius: 2px;
+      font-size: 1.2rem;
+      transition: opacity 0.2s $cubic, transform 0.2s $cubic;
+    }
+    &:hover {
+      &:after {
+        animation: odsoky 1s ease-in-out infinite  alternate;
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(0);
+      }
+    }
+  }

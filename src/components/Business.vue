@@ -25,13 +25,17 @@
           {{ business.address }}
         </p>
         <ul>
-          <li>
+          <li data-tooltip="Haz clic para llamar" class="tooltip tooltip--bottom">
             <a :href="`tel:${business.phone}`">
               <i class="icofont-phone"></i>
               <span> {{ business.phone }} </span>
             </a>
           </li>
-          <li @click="share(business.whatsapp)">
+          <li
+            @click="share(business.whatsapp)"
+            data-tooltip="Haz clic para envíar un mensaje"
+            class="tooltip tooltip--bottom"
+          >
             <i class="icofont-whatsapp"></i>
             <span> {{ business.whatsapp }} </span>
           </li>
@@ -62,10 +66,7 @@ export default {
       send += shareUrl;
       send += `phone=${number}`;
       send += `&text=${Message}`;
-      window.open(
-        encodeURI(send),
-        '_blank',
-      );
+      window.open(encodeURI(send), '_blank');
     },
   },
 };
