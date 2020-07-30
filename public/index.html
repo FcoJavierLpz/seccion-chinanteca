@@ -1,48 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
     <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="seccion-chinanteca">
-    <meta itemprop="description" content="El objetivo de esta página es servir como apoyo para la reactivación de la economia local en nuestra comunidad, mediante un directorio que concentra todos los comercios disponibles en nuestra localidad.">
-    <meta itemprop="image" content="https://vallenacional.com/img/bg-valle-nal.47408609.jpg">
+    <meta itemprop="name" content="seccion-chinanteca" />
+    <meta
+      itemprop="description"
+      content="El objetivo de esta página es servir como apoyo para la reactivación de la economia local en nuestra comunidad, mediante un directorio que concentra todos los comercios disponibles en nuestra localidad."
+    />
+    <meta itemprop="image" content="https://vallenacional.com/img/bg-valle-nal.47408609.jpg" />
 
     <!-- Meta Tags Generated via http://heymeta.com -->
     <!-- Primary Meta Tags -->
-    <meta name="title" content="seccion-chinanteca">
-    <meta name="description" content="El objetivo de esta página es servir como apoyo para la reactivación de la economia local en nuestra comunidad, mediante un directorio que concentra todos los comercios disponibles en nuestra localidad.">
+    <meta name="title" content="seccion-chinanteca" />
+    <meta
+      name="description"
+      content="El objetivo de esta página es servir como apoyo para la reactivación de la economia local en nuestra comunidad, mediante un directorio que concentra todos los comercios disponibles en nuestra localidad."
+    />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://vallenacional.com">
-    <meta property="og:title" content="seccion-chinanteca">
-    <meta property="og:description" content="El objetivo de esta página es servir como apoyo para la reactivación de la economia local en nuestra comunidad, mediante un directorio que concentra todos los comercios disponibles en nuestra localidad.">
-    <meta property="og:image" content="https://vallenacional.com/img/bg-valle-nal.47408609.jpg">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vallenacional.com" />
+    <meta property="og:title" content="seccion-chinanteca" />
+    <meta
+      property="og:description"
+      content="El objetivo de esta página es servir como apoyo para la reactivación de la economia local en nuestra comunidad, mediante un directorio que concentra todos los comercios disponibles en nuestra localidad."
+    />
+    <meta property="og:image" content="https://vallenacional.com/img/bg-valle-nal.47408609.jpg" />
 
     <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="seccion-chinanteca">
-    <meta property="twitter:url" content="https://vallenacional.com">
-    <meta name="twitter:description" content="El objetivo de esta página es servir como apoyo para la reactivación de la economia local en nuestra comunidad, mediante un directorio que concentra todos los comercios disponibles en nuestra localidad.">
-    <meta name="twitter:image" content="https://vallenacional.com/img/bg-valle-nal.47408609.jpg">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="seccion-chinanteca" />
+    <meta property="twitter:url" content="https://vallenacional.com" />
+    <meta
+      name="twitter:description"
+      content="El objetivo de esta página es servir como apoyo para la reactivación de la economia local en nuestra comunidad, mediante un directorio que concentra todos los comercios disponibles en nuestra localidad."
+    />
+    <meta name="twitter:image" content="https://vallenacional.com/img/bg-valle-nal.47408609.jpg" />
 
-    <link rel="icon" href="./favicon.ico">
-    <link rel="stylesheet" href="./icofont.css">
-    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./icofont.css" />
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen" />
     <title><%= htmlWebpackPlugin.options.title %></title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174001160-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() {
+        dataLayer.push(arguments);
+      }
       gtag('js', new Date());
 
       gtag('config', 'UA-174001160-1');
     </script>
-
   </head>
   <body>
     <!-- Load Facebook SDK for JavaScript -->
@@ -50,27 +63,36 @@
     <script>
       window.fbAsyncInit = function() {
         FB.init({
-          xfbml            : true,
-          version          : 'v7.0'
+          xfbml: true,
+          version: 'v7.0',
         });
       };
 
       (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, 'script', 'facebook-jssdk');
+    </script>
 
     <!-- Your Chat Plugin code -->
-    <div class="fb-customerchat"
-      attribution=setup_tool
+    <div
+      class="fb-customerchat"
+      attribution="setup_tool"
       page_id="101709858309536"
-      theme_color="#006AFF">
-    </div>
+      theme_color="#006AFF"
+      logged_in_greeting="¿ Tienes dudas o Sugerencias ? Escribenos..."
+      logged_out_greeting="¿ Tienes dudas o Sugerencias ? Escribenos..."
+    ></div>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please
+        enable it to continue.</strong
+      >
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
