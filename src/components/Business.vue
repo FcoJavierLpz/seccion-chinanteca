@@ -26,6 +26,7 @@
         </p>
         <ul>
           <li data-tooltip="Haz clic para llamar" class="tooltip tooltip--bottom">
+            <span class="triangle"></span>
             <a :href="`tel:${business.phone}`">
               <i class="icofont-phone"></i>
               <span> {{ business.phone }} </span>
@@ -33,7 +34,7 @@
           </li>
           <li
             @click="share(business.whatsapp)"
-            data-tooltip="Haz clic para envíar un mensaje"
+            data-tooltip="Haz clic para enviar un mensaje"
             class="tooltip tooltip--bottom"
           >
             <i class="icofont-whatsapp"></i>
