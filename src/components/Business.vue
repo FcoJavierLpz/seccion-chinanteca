@@ -26,8 +26,10 @@
         </p>
         <ul>
           <li>
-            <i class="icofont-phone"></i>
-            <span> {{ business.phone }} </span>
+            <a :href="`tel:${business.phone}`">
+              <i class="icofont-phone"></i>
+              <span> {{ business.phone }} </span>
+            </a>
           </li>
           <li @click="share(business.whatsapp)">
             <i class="icofont-whatsapp"></i>
@@ -195,7 +197,15 @@ export default {
         }
 
         a {
-          text-decoration: none;
+          &,
+          &:link,
+          &:visited {
+            text-decoration: none;
+            padding: 1rem;
+            color: $color-grey-dark;
+            border: none;
+            cursor: pointer;
+          }
         }
       }
 
