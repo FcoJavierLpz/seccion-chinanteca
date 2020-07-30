@@ -20,5 +20,16 @@
     "facebook": "https://www.facebook.com/",
     "description": "Ideas es una empresa dedicada al diseño y construcción de obras civiles, con una amplia experiencia en la ejecución de trabajos de construcción, que ofrece sus servicios a clientes del sector público y privado de todo el país.",
     "dealer": ""
+  },
+  {
+    "id": 3,
+    "name": "Abarrotes Paty",
+    "image": "img/paty.jpg",
+    "address": "Independencia 14, La Piedra 68480 San Juan Bautista Valle Nacional",
+    "phone": "2831201073",
+    "whatsapp": "2831201073",
+    "facebook": "https://www.facebook.com/",
+    "description": "Abarrotes Paty, cuenta con más de 30 años de experiencia con gran variedad de artículos de la canasta básica, así como verduras y fruta de temporada. Somos un negocio local brindándole a nuestros clientes la atención y calidad que usted merece",
+    "dealer": ""
   }
 ]
