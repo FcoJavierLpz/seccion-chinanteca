@@ -10,9 +10,7 @@
         :alt="business.name"
         class="business__img"
       />
-      <figcaption class="business__caption">
-        {{ business.name }}
-      </figcaption>
+      <figcaption class="business__caption"></figcaption>
     </figure>
     <div class="business__text">
       <h3 class="heading-tertiary u-margin-bottom-small">
@@ -159,7 +157,7 @@ export default {
 
   &:hover &__img {
     transform: translateX(0) scale(1);
-    filter: blur(3px) brightness(80%);
+    filter: hue-rotate(180deg);
   }
 
   &__contact-details {
