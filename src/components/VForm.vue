@@ -78,18 +78,6 @@
     </div>
 
     <div class="form__group">
-      <input
-        type="file"
-        class="form__input"
-        placeholder="Sube tu logo"
-        name="logo"
-        id="logo"
-        required
-      />
-      <label for="logo" class="form__label">Sube tu logo</label>
-    </div>
-
-    <div class="form__group">
       <button type="submit" class="pageclip-form__submit btn btn--green">
         <span>Registrar</span>
       </button>
@@ -122,7 +110,6 @@ export default {
       phone: null,
       whatsapp: null,
       description: null,
-      logo: null,
       isSending: false,
     };
   },
