@@ -8,6 +8,11 @@
     <div class="row">
       <search @search-business="emitSearch"></search>
     </div>
+    <div class="row">
+      <h3 class="heading-tertiary u-center-text" v-show="!filteredBusiness.length">
+        Ups! Lo sentimos, No existen registros de este negocio
+      </h3>
+    </div>
     <div class="row" v-for="commerce in filteredBusiness" :key="commerce.id">
       <business :business="commerce"></business>
     </div>
