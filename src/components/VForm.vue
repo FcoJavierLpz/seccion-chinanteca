@@ -67,7 +67,7 @@
       <textarea
         class="form__input"
         cols="20"
-        rows="4"
+        rows="3"
         placeholder="¿Qué vendes?"
         name="description"
         v-model="description"
@@ -75,6 +75,18 @@
         required
       ></textarea>
       <label for="description" class="form__label">¿Qué vendes?</label>
+    </div>
+
+    <div class="form__group">
+      <input
+        type="file"
+        class="form__input"
+        placeholder="Sube tu logo"
+        name="logo"
+        id="logo"
+        required
+      />
+      <label for="logo" class="form__label">Sube tu logo</label>
     </div>
 
     <div class="form__group">
@@ -110,6 +122,7 @@ export default {
       phone: null,
       whatsapp: null,
       description: null,
+      logo: null,
       isSending: false,
     };
   },
@@ -125,14 +138,14 @@ export default {
 <style lang="scss" scoped>
 .form {
   &__group:not(:last-child) {
-    margin-bottom: 2rem;
+    margin-bottom: .8rem;
   }
 
   &__input {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-family: inherit;
     color: inherit;
-    padding: 1.5rem 2rem;
+    padding: 1.2rem 2rem;
     border-radius: 2px;
     background-color: rgba($color-white, 0.5);
     border: none;
