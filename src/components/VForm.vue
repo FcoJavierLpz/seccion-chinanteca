@@ -85,7 +85,6 @@
         placeholder="Sube tu logo"
         name="logo"
         id="logo"
-        required
       />
       <label for="logo" class="form__label">Sube tu logo</label>
     </div>
