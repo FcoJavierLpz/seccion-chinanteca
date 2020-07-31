@@ -28,6 +28,19 @@
       <input
         type="text"
         class="form__input"
+        placeholder="Dirección"
+        name="address"
+        v-model="address"
+        id="address"
+        required
+      />
+      <label for="address" class="form__label">Dirección</label>
+    </div>
+
+    <div class="form__group">
+      <input
+        type="text"
+        class="form__input"
         placeholder="Teléfono"
         name="phone"
         v-model="phone"
@@ -93,6 +106,7 @@ export default {
     return {
       errors: [],
       name: null,
+      address: null,
       phone: null,
       whatsapp: null,
       description: null,
