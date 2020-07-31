@@ -88,8 +88,8 @@ export default {};
 }
 
 .fb-share-button {
-  top: 95vh;
-  right: 1rem;
+  top: 96vh;
+  left: 1rem;
   position: fixed;
 }
 </style>
