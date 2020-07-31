@@ -284,5 +284,9 @@ export default {
     filter: alpha(opacity=20);
     opacity: 0.2;
   }
+
+  .heading-secondary {
+    font-size: 2.8rem;
+  }
 }
 </style>
