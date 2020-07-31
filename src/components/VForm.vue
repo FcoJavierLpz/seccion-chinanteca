@@ -3,7 +3,8 @@
     action="https://usebasin.com/f/22a8d4974e28"
     class="form"
     method="post"
-    @submit.prevent="onSubmit"
+    enctype="multipart/form-data"
+    accept-charset="UTF-8"
   >
     <div class="u-margin-bottom-medium">
       <h2 class="heading-secondary">
@@ -78,23 +79,21 @@
     </div>
 
     <div class="form__group">
+      <input
+        type="file"
+        class="form__input"
+        placeholder="Sube tu logo"
+        name="logo"
+        id="logo"
+        required
+      />
+      <label for="logo" class="form__label">Sube tu logo</label>
+    </div>
+
+    <div class="form__group">
       <button type="submit" class="btn btn--green">
         <span>Registrar</span>
       </button>
-    </div>
-    <div class="animated fadeInDown alert alert--success" role="alert" v-show="isSending">
-      <button
-        type="button"
-        class="close"
-        data-dismiss="alert"
-        aria-label="Close"
-        @click="isSending = false"
-      >
-        <span aria-hidden="true">×</span>
-      </button>
-      <strong>¡Gracias por registrarte {{ name }}!,</strong>
-      tu información será evaluada, en caso de cumplir los requisitos te
-      notifcaremos a los números proporcionados
     </div>
   </form>
 </template>
@@ -114,10 +113,35 @@ export default {
     };
   },
   methods: {
-    onSubmit(e) {
-      e.preventDefault();
-      this.isSending = true;
-    },
+    // onSubmit(e) {
+    //   e.preventDefault();
+    //   const formData = {
+    //     name: this.name,
+    //     address: this.address,
+    //     phone: this.phone,
+    //     whatsapp: this.whatsapp,
+    //     description: this.description,
+    //   };
+    //   const options = {
+    //     method: 'POST',
+    //     body: JSON.stringify(formData),
+    //     headers: {
+    //       Accept: 'application/json',
+    //       'Content-Type': 'application/json',
+    //     },
+    //   };
+    //   fetch('https://usebasin.com/f/22a8d4974e28.json', options)
+    //     .then((response) => {
+    //       this.isSending = true;
+    //       return response.json();
+    //     })
+    //     .then((data) => {
+    //       console.log('data = ', data);
+    //     })
+    //     .catch((err) => {
+    //       console.error(err);
+    //     });
+    // },
   },
 };
 </script>
@@ -125,7 +149,7 @@ export default {
 <style lang="scss" scoped>
 .form {
   &__group:not(:last-child) {
-    margin-bottom: .8rem;
+    margin-bottom: 0.8rem;
   }
 
   &__input {
@@ -231,8 +255,8 @@ export default {
     color: $color-primary;
     padding: 1.3rem;
     margin-bottom: 2rem;
-    border: .1rem solid transparent;
-    border-radius: .4rem;
+    border: 0.1rem solid transparent;
+    border-radius: 0.4rem;
     margin-right: 3rem;
 
     &--success {
