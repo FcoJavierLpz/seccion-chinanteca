@@ -1,7 +1,7 @@
 <template>
   <form
-    action="https://send.pageclip.co/U3QSPafLGcDmXA6nw9y9mew0UmBI4S71"
-    class="pageclip-form form"
+    action="https://usebasin.com/f/22a8d4974e28"
+    class="form"
     method="post"
     @submit.prevent="onSubmit"
   >
@@ -78,7 +78,7 @@
     </div>
 
     <div class="form__group">
-      <button type="submit" class="pageclip-form__submit btn btn--green">
+      <button type="submit" class="btn btn--green">
         <span>Registrar</span>
       </button>
     </div>
