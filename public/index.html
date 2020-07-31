@@ -58,40 +58,6 @@
     </script>
   </head>
   <body>
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script
-      defer
-      crossorigin="anonymous"
-      nonce="s6eaIkws"
-    >
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml: true,
-          version: 'v7.0',
-        });
-      };
-
-      (function(d, s, id) {
-        var js,
-          fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      })(document, 'script', 'facebook-jssdk');
-    </script>
-
-    <!-- Your Chat Plugin code -->
-    <div
-      class="fb-customerchat"
-      attribution="setup_tool"
-      page_id="101709858309536"
-      theme_color="#006AFF"
-      logged_in_greeting="¿ Tienes dudas o Sugerencias ? Escribenos..."
-      logged_out_greeting="¿ Tienes dudas o Sugerencias ? Escribenos..."
-    ></div>
     <noscript>
       <strong
         >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please
@@ -100,6 +66,6 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
-    <script src="https://s.pageclip.co/v1/pageclip.js" crossorigin="anonymous" SameSite=None crossorigin="anonymous"> </script>
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
   </body>
 </html>
