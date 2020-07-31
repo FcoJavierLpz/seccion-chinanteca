@@ -94,6 +94,7 @@
       <button type="submit" class="btn btn--green">
         <span>Registrar</span>
       </button>
+      <router-link to="/thank-you" class="btn btn--green"></router-link>
     </div>
   </form>
 </template>
