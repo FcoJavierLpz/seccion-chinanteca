@@ -15,18 +15,14 @@
       </p>
     </div>
     <div
-      class="fb-share-button"
-      data-href="http://vallenacional.com/"
+      class="fb-like"
+      data-href="https://vallenacional.com/"
+      data-width=""
       data-layout="button_count"
+      data-action="like"
       data-size="large"
-    >
-      <a
-        target="_blank"
-        href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fvallenacional.com%2F&amp;src=sdkpreparse"
-        class="fb-xfbml-parse-ignore"
-        >Compartir</a
-      >
-    </div>
+      data-share="true"
+    ></div>
   </footer>
 </template>
 
@@ -87,7 +83,7 @@ export default {};
   }
 }
 
-.fb-share-button {
+.fb-like {
   top: 96vh;
   left: 1rem;
   position: fixed;
