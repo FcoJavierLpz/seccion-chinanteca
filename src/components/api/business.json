@@ -31,5 +31,16 @@
     "facebook": "https://www.facebook.com/",
     "description": "Abarrotes Paty, cuenta con más de 30 años de experiencia con gran variedad de artículos de la canasta básica, así como verduras y fruta de temporada. Somos un negocio local brindándole a nuestros clientes la atención y calidad que usted merece",
     "dealer": ""
+  },
+  {
+    "id": 4,
+    "name": "Dulzuritas de la vida",
+    "image": "img/dulzuritas.jpeg",
+    "address": "Poniente 4, Casa del amigo Juan Gaby",
+    "phone": "2831166893",
+    "whatsapp": "2831158447",
+    "facebook": "https://www.facebook.com/",
+    "description": "Le ofreces diferentes postres elaborados en casa, además de comidas cada fin de semana. Contamos con servicio a domicilio.",
+    "dealer": ""
   }
 ]
