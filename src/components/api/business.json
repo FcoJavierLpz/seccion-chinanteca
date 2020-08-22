@@ -1,13 +1,13 @@
 [
   {
     "id": 1,
-    "name": "Kikes Pizza",
-    "image": "img/kike-pizza.jpg",
-    "address": "Calle Tabasco 68480 San Juan Bautista Valle Nacional",
-    "phone": " 87 7 44 23",
-    "whatsapp": "522838774423",
+    "name": "Dulzuritas de la vida",
+    "image": "img/dulzuritas.jpeg",
+    "address": "Poniente 4, Casa del amigo Juan Gaby",
+    "phone": "2831166893",
+    "whatsapp": "2831158447",
     "facebook": "https://www.facebook.com/",
-    "description": "",
+    "description": "Le ofreces diferentes postres elaborados en casa, además de comidas cada fin de semana. Contamos con servicio a domicilio.",
     "dealer": ""
   },
   {
@@ -34,13 +34,13 @@
   },
   {
     "id": 4,
-    "name": "Dulzuritas de la vida",
-    "image": "img/dulzuritas.jpeg",
-    "address": "Poniente 4, Casa del amigo Juan Gaby",
-    "phone": "2831166893",
-    "whatsapp": "2831158447",
+    "name": "Kikes Pizza",
+    "image": "img/kike-pizza.jpg",
+    "address": "Calle Tabasco 68480 San Juan Bautista Valle Nacional",
+    "phone": " 87 7 44 23",
+    "whatsapp": "522838774423",
     "facebook": "https://www.facebook.com/",
-    "description": "Le ofreces diferentes postres elaborados en casa, además de comidas cada fin de semana. Contamos con servicio a domicilio.",
+    "description": "",
     "dealer": ""
   }
 ]
