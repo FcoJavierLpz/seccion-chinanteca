@@ -1,17 +1,6 @@
 [
   {
     "id": 1,
-    "name": "Toque Oaxaca",
-    "image": "img/kike-pizza.jpg",
-    "address": "Av.Reforma Col Centro",
-    "phone": " 5516577707",
-    "whatsapp": "2831061885",
-    "facebook": "https://www.facebook.com/",
-    "description": "Deliciosas y exquisitas tlayudas, hechas con los ingredientes traídos del centro de Oaxaca, pide y acompaña en familia.",
-    "dealer": ""
-  },
-  {
-    "id": 2,
     "name": "Dulzuritas de la vida",
     "image": "img/dulzuritas.jpeg",
     "address": "Poniente 4, Casa del amigo Juan Gaby",
@@ -19,6 +8,17 @@
     "whatsapp": "2831158447",
     "facebook": "https://www.facebook.com/",
     "description": "Le ofrece diferentes postres elaborados en casa, además de comidas cada fin de semana y cuenta con servicio a domicilio.",
+    "dealer": ""
+  },
+  {
+    "id": 2,
+    "name": "Toque Oaxaca",
+    "image": "",
+    "address": "Av.Reforma Col Centro",
+    "phone": " 5516577707",
+    "whatsapp": "2831061885",
+    "facebook": "https://www.facebook.com/",
+    "description": "Deliciosas y exquisitas tlayudas, hechas con los ingredientes traídos del centro de Oaxaca, pide y acompaña en familia.",
     "dealer": ""
   },
   {
