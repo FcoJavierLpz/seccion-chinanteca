@@ -1,6 +1,17 @@
 [
   {
     "id": 1,
+    "name": "Toque Oaxaca",
+    "image": "img/kike-pizza.jpg",
+    "address": "Av.Reforma Col Centro",
+    "phone": " 5516577707",
+    "whatsapp": "2831061885",
+    "facebook": "https://www.facebook.com/",
+    "description": "Deliciosas y exquisitas tlayudas, hechas con los ingredientes traídos del centro de Oaxaca, pide y acompaña en familia.",
+    "dealer": ""
+  },
+  {
+    "id": 2,
     "name": "Dulzuritas de la vida",
     "image": "img/dulzuritas.jpeg",
     "address": "Poniente 4, Casa del amigo Juan Gaby",
@@ -11,7 +22,7 @@
     "dealer": ""
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "Ideas Ingeniería y Diseños de Espacios Arquitectónicos",
     "image": "img/ideas.png",
     "address": "Emiliano Zapara #36 col. Libertad Chinanteca.",
@@ -22,7 +33,7 @@
     "dealer": ""
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "Abarrotes Paty",
     "image": "img/paty.jpg",
     "address": "Independencia 14, La Piedra 68480 San Juan Bautista Valle Nacional",
@@ -33,7 +44,7 @@
     "dealer": ""
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "Kikes Pizza",
     "image": "img/kike-pizza.jpg",
     "address": "Calle Tabasco 68480 San Juan Bautista Valle Nacional",
